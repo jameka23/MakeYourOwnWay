@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="62g-bb-CcF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -27,39 +27,144 @@
         <!--View Controller-->
         <scene sceneID="YWF-pt-qhA">
             <objects>
-                <viewController id="nFW-Oo-Ig6" sceneMemberID="viewController">
+                <viewController id="nFW-Oo-Ig6" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pku-JK-stB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4qM-hS-6GL">
-                                <rect key="frame" x="87" y="288" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4qM-hS-6GL">
+                                <rect key="frame" x="87" y="288" width="240" height="149"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <string key="text">Addy looked at her dad in confusion as he was trying to show her the joys of his youth with antique video game consoles.  "Looky here, baby girl, this was what me and your Uncle Phonz played with when we were about your age." </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gm-VA-UhD">
-                                <rect key="frame" x="184" y="614" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjl-c9-a8u">
+                                <rect key="frame" x="42" y="701" width="330" height="30"/>
+                                <state key="normal" title="Luther, her dad, started talking about good days"/>
+                                <connections>
+                                    <segue destination="x9v-Td-qVd" kind="show" id="ppg-Mp-OIE"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjl-c9-a8u">
-                                <rect key="frame" x="184" y="701" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gm-VA-UhD">
+                                <rect key="frame" x="77" y="663" width="260" height="30"/>
+                                <state key="normal" title="Addy asked her father how old he was"/>
+                                <connections>
+                                    <segue destination="BmY-5I-2p6" kind="show" id="izz-dY-E6z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uUY-un-x42"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4qM-hS-6GL" firstAttribute="centerX" secondItem="uUY-un-x42" secondAttribute="centerX" id="2K0-aq-elF"/>
+                            <constraint firstItem="4qM-hS-6GL" firstAttribute="leading" secondItem="uUY-un-x42" secondAttribute="leading" constant="87" id="AC2-Eq-e8y"/>
+                            <constraint firstItem="uUY-un-x42" firstAttribute="bottom" secondItem="7Gm-VA-UhD" secondAttribute="bottom" constant="169" id="Ajt-GE-nUN"/>
+                            <constraint firstItem="4qM-hS-6GL" firstAttribute="top" secondItem="uUY-un-x42" secondAttribute="top" constant="200" id="FJk-5z-1yY"/>
+                            <constraint firstItem="uUY-un-x42" firstAttribute="trailing" secondItem="4qM-hS-6GL" secondAttribute="trailing" constant="87" id="FZf-tM-fFp"/>
+                            <constraint firstItem="zjl-c9-a8u" firstAttribute="top" secondItem="uUY-un-x42" secondAttribute="top" constant="613" id="JNr-DY-hVT"/>
+                            <constraint firstItem="uUY-un-x42" firstAttribute="bottom" secondItem="zjl-c9-a8u" secondAttribute="bottom" constant="131" id="TsN-vv-cwQ"/>
+                            <constraint firstItem="uUY-un-x42" firstAttribute="bottom" secondItem="4qM-hS-6GL" secondAttribute="bottom" constant="446" id="ULi-A4-jd5"/>
+                            <constraint firstItem="7Gm-VA-UhD" firstAttribute="centerX" secondItem="uUY-un-x42" secondAttribute="centerX" id="fBD-bH-jOJ"/>
+                            <constraint firstItem="zjl-c9-a8u" firstAttribute="centerX" secondItem="uUY-un-x42" secondAttribute="centerX" id="fDQ-iy-8h4"/>
+                            <constraint firstItem="7Gm-VA-UhD" firstAttribute="top" secondItem="uUY-un-x42" secondAttribute="top" constant="575" id="kxD-6a-En5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oSF-Hp-TIJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WOw-7H-odm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="1"/>
+            <point key="canvasLocation" x="-55" y="1"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Gn8-gR-nKZ">
+            <objects>
+                <viewController id="BmY-5I-2p6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Esk-zb-IBd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjt-Hn-aCq">
+                                <rect key="frame" x="6" y="701" width="402" height="30"/>
+                                <state key="normal" title="&quot;Be that as it may, dad, tech changes and you need to too&quot;"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxb-28-JyT">
+                                <rect key="frame" x="54" y="663" width="306" height="30"/>
+                                <state key="normal" title="&quot;Sure dad, you still can't send a memogram&quot;"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="He quickly replied, &quot;Younger than you think, lil lady!&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="asr-AL-A2e">
+                                <rect key="frame" x="87" y="325" width="240" height="62"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PpF-sL-QYk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="asr-AL-A2e" firstAttribute="top" secondItem="PpF-sL-QYk" secondAttribute="top" constant="247" id="2Hd-M6-62q"/>
+                            <constraint firstItem="asr-AL-A2e" firstAttribute="centerX" secondItem="PpF-sL-QYk" secondAttribute="centerX" id="Kny-Lc-tc0"/>
+                            <constraint firstItem="Cxb-28-JyT" firstAttribute="top" secondItem="PpF-sL-QYk" secondAttribute="top" constant="575" id="PMj-m6-plj"/>
+                            <constraint firstItem="PpF-sL-QYk" firstAttribute="bottom" secondItem="rjt-Hn-aCq" secondAttribute="bottom" constant="131" id="Sq2-Nx-8gm"/>
+                            <constraint firstItem="Cxb-28-JyT" firstAttribute="centerX" secondItem="PpF-sL-QYk" secondAttribute="centerX" id="U0X-7N-1wn"/>
+                            <constraint firstItem="PpF-sL-QYk" firstAttribute="bottom" secondItem="Cxb-28-JyT" secondAttribute="bottom" constant="169" id="Viv-oC-B71"/>
+                            <constraint firstItem="PpF-sL-QYk" firstAttribute="bottom" secondItem="asr-AL-A2e" secondAttribute="bottom" constant="465" id="XGy-iy-CUX"/>
+                            <constraint firstItem="rjt-Hn-aCq" firstAttribute="top" secondItem="PpF-sL-QYk" secondAttribute="top" constant="613" id="ZqY-dW-vLx"/>
+                            <constraint firstItem="asr-AL-A2e" firstAttribute="centerX" secondItem="rjt-Hn-aCq" secondAttribute="centerX" id="hca-gD-Adg"/>
+                            <constraint firstItem="rjt-Hn-aCq" firstAttribute="centerX" secondItem="PpF-sL-QYk" secondAttribute="centerX" id="k6M-ug-B3U"/>
+                            <constraint firstItem="asr-AL-A2e" firstAttribute="leading" secondItem="PpF-sL-QYk" secondAttribute="leading" constant="87" id="z9c-WL-ueU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qSO-Vl-3hX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZ0-wJ-PgZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="-453.34821428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xXp-pZ-uHr">
+            <objects>
+                <viewController id="x9v-Td-qVd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cVa-X9-rhL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kud-cn-23b">
+                                <rect key="frame" x="87" y="288" width="240" height="149"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">"I remember....", Luther went rambling about the days him and Uncle Phonz would play outside all day until the street light came on and how when they played video games it was only on the weekends, that's when no one was home to utilize all the outlets</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTj-jC-lvT">
+                                <rect key="frame" x="42" y="701" width="330" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Luther, her dad, started talking about good days"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="946-bS-FBV">
+                                <rect key="frame" x="77" y="663" width="260" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Addy asked her father how old he was"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KdL-gR-KiX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KdL-gR-KiX" firstAttribute="trailing" secondItem="kud-cn-23b" secondAttribute="trailing" constant="87" id="DXb-oY-6bX"/>
+                            <constraint firstItem="kud-cn-23b" firstAttribute="leading" secondItem="KdL-gR-KiX" secondAttribute="leading" constant="87" id="NXk-7R-Laf"/>
+                            <constraint firstItem="kud-cn-23b" firstAttribute="centerX" secondItem="KdL-gR-KiX" secondAttribute="centerX" id="fK0-Xf-4OT"/>
+                            <constraint firstItem="KdL-gR-KiX" firstAttribute="bottom" secondItem="kud-cn-23b" secondAttribute="bottom" constant="425" id="gil-Uq-uvD"/>
+                            <constraint firstItem="kud-cn-23b" firstAttribute="top" secondItem="KdL-gR-KiX" secondAttribute="top" constant="200" id="yoC-Y7-ZK5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YuV-9G-xNN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RqG-JW-k4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="281"/>
         </scene>
     </scenes>
     <resources>
