@@ -27,7 +27,7 @@
         <!--View Controller-->
         <scene sceneID="YWF-pt-qhA">
             <objects>
-                <viewController id="nFW-Oo-Ig6" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nFW-Oo-Ig6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pku-JK-stB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,7 +80,7 @@
         <!--View Controller-->
         <scene sceneID="Gn8-gR-nKZ">
             <objects>
-                <viewController id="BmY-5I-2p6" sceneMemberID="viewController">
+                <viewController id="BmY-5I-2p6" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Esk-zb-IBd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,10 +88,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjt-Hn-aCq">
                                 <rect key="frame" x="6" y="701" width="402" height="30"/>
                                 <state key="normal" title="&quot;Be that as it may, dad, tech changes and you need to too&quot;"/>
+                                <connections>
+                                    <segue destination="u86-dh-GlL" kind="show" id="pWA-jD-ya5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxb-28-JyT">
                                 <rect key="frame" x="54" y="663" width="306" height="30"/>
                                 <state key="normal" title="&quot;Sure dad, you still can't send a memogram&quot;"/>
+                                <connections>
+                                    <segue destination="kHO-AY-6PM" kind="show" id="YVE-4L-iap"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="He quickly replied, &quot;Younger than you think, lil lady!&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="asr-AL-A2e">
                                 <rect key="frame" x="87" y="325" width="240" height="62"/>
@@ -126,7 +132,7 @@
         <!--View Controller-->
         <scene sceneID="xXp-pZ-uHr">
             <objects>
-                <viewController id="x9v-Td-qVd" sceneMemberID="viewController">
+                <viewController id="x9v-Td-qVd" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cVa-X9-rhL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,11 +149,17 @@
                                 <rect key="frame" x="42" y="701" width="330" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Luther, her dad, started talking about good days"/>
+                                <connections>
+                                    <segue destination="whg-0d-Y67" kind="show" id="LbW-GG-SxR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="946-bS-FBV">
                                 <rect key="frame" x="77" y="663" width="260" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Addy asked her father how old he was"/>
+                                <connections>
+                                    <segue destination="Abb-VP-ozu" kind="show" id="02a-1r-vqj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KdL-gR-KiX"/>
@@ -164,7 +176,184 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RqG-JW-k4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="281"/>
+            <point key="canvasLocation" x="748" y="674"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wWi-31-C60">
+            <objects>
+                <viewController id="kHO-AY-6PM" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RWK-Lr-LGy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSo-87-eZD">
+                                <rect key="frame" x="111.5" y="701" width="191" height="30"/>
+                                <state key="normal" title="Sheesh, dad. You're archaic"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkj-0i-WTi">
+                                <rect key="frame" x="100.5" y="663" width="213" height="30"/>
+                                <state key="normal" title="But those aren't that fun to see"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="They were called 'memes' in my day" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="69Z-FF-CPE">
+                                <rect key="frame" x="87" y="325" width="240" height="62"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZEA-WJ-Ukf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZEA-WJ-Ukf" firstAttribute="bottom" secondItem="TSo-87-eZD" secondAttribute="bottom" constant="131" id="ABX-r2-Y24"/>
+                            <constraint firstItem="69Z-FF-CPE" firstAttribute="centerX" secondItem="ZEA-WJ-Ukf" secondAttribute="centerX" id="Adk-14-zC0"/>
+                            <constraint firstItem="69Z-FF-CPE" firstAttribute="leading" secondItem="ZEA-WJ-Ukf" secondAttribute="leading" constant="87" id="Gpa-51-jLb"/>
+                            <constraint firstItem="69Z-FF-CPE" firstAttribute="centerX" secondItem="TSo-87-eZD" secondAttribute="centerX" id="Jmm-5i-ifh"/>
+                            <constraint firstItem="TSo-87-eZD" firstAttribute="top" secondItem="ZEA-WJ-Ukf" secondAttribute="top" constant="613" id="ZgU-BT-cIu"/>
+                            <constraint firstItem="ZEA-WJ-Ukf" firstAttribute="bottom" secondItem="bkj-0i-WTi" secondAttribute="bottom" constant="169" id="bqI-RP-zWx"/>
+                            <constraint firstItem="TSo-87-eZD" firstAttribute="centerX" secondItem="ZEA-WJ-Ukf" secondAttribute="centerX" id="qCb-g6-gRy"/>
+                            <constraint firstItem="bkj-0i-WTi" firstAttribute="top" secondItem="ZEA-WJ-Ukf" secondAttribute="top" constant="575" id="qWk-qS-uka"/>
+                            <constraint firstItem="ZEA-WJ-Ukf" firstAttribute="bottom" secondItem="69Z-FF-CPE" secondAttribute="bottom" constant="465" id="wkg-XE-Gz8"/>
+                            <constraint firstItem="bkj-0i-WTi" firstAttribute="centerX" secondItem="ZEA-WJ-Ukf" secondAttribute="centerX" id="wtf-Ot-pwe"/>
+                            <constraint firstItem="69Z-FF-CPE" firstAttribute="top" secondItem="ZEA-WJ-Ukf" secondAttribute="top" constant="247" id="xik-gm-21y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="z65-QK-4LW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Hf-yw-hyi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1546" y="-925"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BZS-sE-JTw">
+            <objects>
+                <viewController id="u86-dh-GlL" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Zn-g1-Ewm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZW-Ne-Z3W">
+                                <rect key="frame" x="104" y="701" width="206" height="30"/>
+                                <state key="normal" title="I will say I like history a lot dad"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rw8-QL-PhP">
+                                <rect key="frame" x="81" y="663" width="252" height="30"/>
+                                <state key="normal" title="It's like the past went back 100 years"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="In order to enjoy the new, you need to understand the past" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5wa-aX-io8">
+                                <rect key="frame" x="87" y="325" width="240" height="62"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F22-du-VHm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F22-du-VHm" firstAttribute="bottom" secondItem="XZW-Ne-Z3W" secondAttribute="bottom" constant="131" id="3Ij-2U-251"/>
+                            <constraint firstItem="Rw8-QL-PhP" firstAttribute="centerX" secondItem="F22-du-VHm" secondAttribute="centerX" id="L4W-jf-HqP"/>
+                            <constraint firstItem="5wa-aX-io8" firstAttribute="centerX" secondItem="XZW-Ne-Z3W" secondAttribute="centerX" id="Oay-D8-udw"/>
+                            <constraint firstItem="F22-du-VHm" firstAttribute="bottom" secondItem="Rw8-QL-PhP" secondAttribute="bottom" constant="169" id="XQe-JM-CAY"/>
+                            <constraint firstItem="F22-du-VHm" firstAttribute="bottom" secondItem="5wa-aX-io8" secondAttribute="bottom" constant="465" id="bCY-dg-hH0"/>
+                            <constraint firstItem="XZW-Ne-Z3W" firstAttribute="centerX" secondItem="F22-du-VHm" secondAttribute="centerX" id="iNw-zn-ccg"/>
+                            <constraint firstItem="5wa-aX-io8" firstAttribute="leading" secondItem="F22-du-VHm" secondAttribute="leading" constant="87" id="oNJ-CC-Yog"/>
+                            <constraint firstItem="XZW-Ne-Z3W" firstAttribute="top" secondItem="F22-du-VHm" secondAttribute="top" constant="613" id="poy-Ms-vv3"/>
+                            <constraint firstItem="5wa-aX-io8" firstAttribute="centerX" secondItem="F22-du-VHm" secondAttribute="centerX" id="qz8-Ij-Yuu"/>
+                            <constraint firstItem="Rw8-QL-PhP" firstAttribute="top" secondItem="F22-du-VHm" secondAttribute="top" constant="575" id="xbt-Th-cau"/>
+                            <constraint firstItem="5wa-aX-io8" firstAttribute="top" secondItem="F22-du-VHm" secondAttribute="top" constant="247" id="yQ1-Rd-t4l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="h8Z-Dp-ErE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fxd-Lv-yUf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1545" y="-225"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OE8-QV-qsH">
+            <objects>
+                <viewController id="Abb-VP-ozu" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5hq-pw-Pzx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Young enough to be as hip as you kiddo!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xXq-Dp-FMn">
+                                <rect key="frame" x="87" y="288" width="240" height="149"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvU-Zu-gwK">
+                                <rect key="frame" x="145" y="701" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Define, &quot;hip&quot;, dad."/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvW-cS-FGI">
+                                <rect key="frame" x="142" y="663" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bahahaha, sureeee"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y54-bw-Iqb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xXq-Dp-FMn" firstAttribute="centerX" secondItem="Y54-bw-Iqb" secondAttribute="centerX" id="Bfd-cR-dlV"/>
+                            <constraint firstItem="Y54-bw-Iqb" firstAttribute="trailing" secondItem="xXq-Dp-FMn" secondAttribute="trailing" constant="87" id="Wgg-El-UEm"/>
+                            <constraint firstItem="Y54-bw-Iqb" firstAttribute="bottom" secondItem="xXq-Dp-FMn" secondAttribute="bottom" constant="425" id="fE7-mS-lsF"/>
+                            <constraint firstItem="xXq-Dp-FMn" firstAttribute="top" secondItem="Y54-bw-Iqb" secondAttribute="top" constant="200" id="pfc-hj-l4e"/>
+                            <constraint firstItem="xXq-Dp-FMn" firstAttribute="leading" secondItem="Y54-bw-Iqb" secondAttribute="leading" constant="87" id="pre-9j-QQ4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yvv-JB-6iL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOv-U3-yk9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1545" y="459"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iGA-M7-koG">
+            <objects>
+                <viewController id="whg-0d-Y67" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h8V-qx-mkG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kML-Z7-8pb">
+                                <rect key="frame" x="42" y="701" width="330" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Luther, her dad, started talking about good days"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPw-bV-zAf">
+                                <rect key="frame" x="78" y="663" width="259" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Wait now, I'm getting to the good part"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Gotta go pops!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AfF-1d-Ye9">
+                                <rect key="frame" x="149" y="291" width="116" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zOv-rS-8Y9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AfF-1d-Ye9" firstAttribute="top" secondItem="zOv-rS-8Y9" secondAttribute="top" constant="200" id="1mO-aR-8x0"/>
+                            <constraint firstItem="AfF-1d-Ye9" firstAttribute="centerX" secondItem="zOv-rS-8Y9" secondAttribute="centerX" id="37e-yx-Z9F"/>
+                            <constraint firstItem="AfF-1d-Ye9" firstAttribute="top" secondItem="zOv-rS-8Y9" secondAttribute="top" constant="200" id="A8m-ta-orR"/>
+                            <constraint firstItem="zOv-rS-8Y9" firstAttribute="trailing" secondItem="AfF-1d-Ye9" secondAttribute="trailing" constant="87" id="RrC-nm-uap"/>
+                            <constraint firstItem="zOv-rS-8Y9" firstAttribute="bottom" secondItem="AfF-1d-Ye9" secondAttribute="bottom" constant="425" id="ajd-gE-Hid"/>
+                            <constraint firstItem="AfF-1d-Ye9" firstAttribute="centerX" secondItem="zOv-rS-8Y9" secondAttribute="centerX" id="r09-bp-X0d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oQ8-ES-joe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZV5-Q4-UNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1544.9275362318842" y="1194.6428571428571"/>
         </scene>
     </scenes>
     <resources>
